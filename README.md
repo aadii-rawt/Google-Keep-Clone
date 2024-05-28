@@ -14,14 +14,3 @@
 
 ### Live site
 https://google-keep-ar4.netlify.app/
-
-### To clone this app
-Type this into your terminal
-
-    git clone https://github.com/adityarawat4/aeonaxy-assignment.git
-
-### To run this app in dev mode
-  
-    npm install && npm start
-    
-Open http://localhost:5173/ to view it in your browser.
