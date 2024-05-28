@@ -1,0 +1,107 @@
+.sidebar{
+    position: sticky;
+      top: 4rem;
+      left: 0;
+      width: 62px;
+      transition: width 0.4s;
+      height: calc(100vh - 4rem);
+      overflow: hidden;
+      z-index: 9999;
+      background: var(--bg-color);
+  }
+  .sidebar-links {
+    padding-block: 10px;
+    list-style: none;
+    padding-right: 10px;
+    z-index: 999;
+  }
+  .sidebar-links span{
+    text-wrap: nowrap;
+  }
+  .sidebar:hover {
+    width: 20%;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.527);
+  }
+  .sidebar-links ul li a {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+  }
+  .sidebar-links ul li i{
+    font-size: 1.2rem;
+  }
+  
+  .sidebar-links .nav-icons {
+    width: 30px;
+    font-size: 1.2rem;
+    padding: 7px 25px;
+    text-align: center;
+  }
+  .menu-open {
+    width: 20%;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.527);
+  }
+  .sidebar-links .title {
+    margin: 0px 20px;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+  .menu-open .active {
+    background:var(--nav-hover);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .sidebar:hover .active {
+    background:var(--nav-hover);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .name-title{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: smaller;
+    text-align: center;
+    margin-block: 10px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+  }
+  .menu-open .name-title, 
+  .sidebar:hover .name-title{
+    opacity: 1;
+  }
+
+  @media (max-width : 776px){
+    .sidebar{
+      position: sticky;
+      top: 4rem;
+      left: 0%;
+    }
+    .menu-open{
+      width: 50%;
+    }
+    .sidebar:hover {
+      width: 62px;
+      box-shadow: none;
+    }
+    .sidebar:hover .active {
+      background: none;
+    }
+  }
+  @media (max-width : 400px){
+    .sidebar{
+      position: fixed;
+      top: 4rem;
+      left: 0%;
+    }
+    .menu-open{
+      width: 70%;
+    }
+    .sidebar:hover { 
+      width: 62px;
+      box-shadow: none;
+    }
+  }

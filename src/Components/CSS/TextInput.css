@@ -1,0 +1,65 @@
+.input-conatiner{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-block: 1.5rem;
+}
+.input-box{
+    width: 50%;
+    box-shadow: var(--input-shadow);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+.inputes{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    display: block;
+    padding: 5px;
+    font-size: 1rem;
+    resize: none;
+    overflow: hidden;
+    color: var(--text-color);
+}
+input{
+    width: 100%;
+}
+#title{
+    font-weight: bold;
+}
+.add-btn{
+    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.notes-btns{
+    display: flex;
+    gap: 1rem;
+}
+.add-btn button{
+    all: unset;
+    padding: 5px 15px;
+    background: var(--btn-bg);
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width : 776px){
+   .input-box{
+    width: 80%;
+   }
+}
+  
+@media (max-width : 446px){
+   .input-box{
+        width: 100%;
+   }
+}
+  

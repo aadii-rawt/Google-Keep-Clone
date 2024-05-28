@@ -1,0 +1,83 @@
+.model-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.126);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--text-color);
+}
+.model-box{
+    position: relative;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 60%;
+    max-height: 70%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.update-note-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.edit-box img{
+    max-width: 50%;
+}
+.edit-btns{   
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    gap: 0.5rem; 
+}
+.edit-tool-icon{
+    all: unset;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    background:  #626769;
+}
+#update-title{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.edit-input form{
+    padding: 20px;
+    
+}
+.update-btn{
+    position: sticky;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    background:inherit;
+    color: var(--text-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.292);
+}
+.update-btn button{
+    all: unset;
+    cursor: pointer;
+}
+@media(max-width : 600px){
+    .edit-box{
+        width: 100%;
+        min-width: 100%;
+    }
+    .edit-box img{
+        width: 80%;
+    }
+}

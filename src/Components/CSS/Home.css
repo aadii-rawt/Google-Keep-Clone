@@ -1,0 +1,41 @@
+main{
+    flex-direction: column;
+    padding-inline: 1rem; 
+    position: relative;
+}
+.notes{
+    margin: 1rem auto;
+    display: flex; 
+    align-items:self-start;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    /* display: grid; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* gap: 10px; */
+}
+.note-title{
+    margin: 0 20px;
+    font-size: smaller;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    position: absolute;
+    left: 20px;
+    border-radius: 20px;
+    background: rgb(206, 206, 206);
+}
+::-webkit-scrollbar-thumb{
+    height: 8px;
+    background: rgb(110, 110, 110);
+    border-radius: 20px;
+}
+@media(max-width : 776px){
+    main{
+        height:calc(100vh - 4rem);
+        padding-left: 5rem !important;
+
+    }
+}

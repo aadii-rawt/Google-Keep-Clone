@@ -1,0 +1,56 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+  --text-color:black;
+  --icon-color: #5F6368;
+  --nav-hover: #FEEFC3;
+  --bg-color: white;
+  --searchBar-bg: #E9EAEA;
+  --hover-shadow: 0px 2px 3px rgba(0, 0, 0, 0.527);
+  --icon-hover: #E9EAEA ;
+  --bg-note: #fff;
+  --btn-bg:#dbd8e3;
+  --border-color : #e0e0e0;
+  --input-shadow:0 1px 2px 0 rgb(60 66 6/ 30%), 0 2px 6px 2px rgb(60 66 6/ 15%);
+}
+.dark{
+  --text-color : #fff;
+  --icon-color : #fff;
+  --bg-color : #191510;
+  --nav-hover : #322e3b;
+  --searchBar-bg:#322e3b;
+  --hover-shadow: 0px 2px 3px rgba(255, 255, 255, 0.527);
+  --icon-hover: #322e3b;
+  --bg-note: #191510;
+  --btn-bg:#dbd8e3;
+  --border-color : #4f4a4a;
+  --input-shadow:0 1px 1px 0 rgba(217, 217, 214, 0.138), 0 2px 3px 1px rgba(179, 179, 179, 0.142);
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.container{
+  display: flex;
+}
+main{
+  width: 100%;
+  background: var(--bg-color);
+}
+
+@keyframes shimmer {
+  0% {
+      background-color: rgba(164, 161, 161, 0.799);
+  }
+  50% {
+      background-color:rgba(164, 161, 161, 0.605);
+  }
+  100% {
+      /* background-color:rgba(164, 161, 161, 0.715); */
+      background-color: rgba(164, 161, 161, 0.799);
+  }
+}
