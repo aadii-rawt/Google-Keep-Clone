@@ -11,6 +11,7 @@ import { auth, db } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import ShimmerEffect from "../Components/ShimmerEffect";
 import { useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import {
   collection,
   doc,
@@ -25,10 +26,15 @@ function Home() {
   const { notes, setNotes, pinNotes, searchQuery } = useContext(DataContext);
   const [user] = useAuthState(auth);
 
-  const navigate = useNavigate();
-  if (!user) {
-    navigate("/login");
-  }
+
+  useEffect(() => {
+    async function handleSingin() {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(auth, 'user@gmail.com', 'user@123')
+
+    }
+    handleSingin()
+  })
 
   useEffect(() => {
     // fetch data from database
