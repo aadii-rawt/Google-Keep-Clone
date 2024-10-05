@@ -19,6 +19,7 @@ import EditNote from "../Components/EditNote";
 function Archive() {
   const { archiveNotes, setArchiveNotes } = useContext(DataContext);
   const [user] = useAuthState(auth);
+  const { searchQuery, setSearchQuery } = useContext(DataContext);
 
   useEffect(() => {
     // fetch data from database

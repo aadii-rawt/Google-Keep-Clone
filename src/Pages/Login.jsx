@@ -17,8 +17,8 @@ function Login() {
   const provider = new GoogleAuthProvider();
   const [action, setAction] = useState("Sign in");
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("user@gmail.com");
+  const [password, setPassword] = useState("user@123");
   const [error, setError] = useState("");
   const navigate = useNavigate();
   // Sign in user
@@ -79,7 +79,7 @@ function Login() {
   return (
     <div className="register">
       <div className="register-box">
-        <h3 className="welcome-title">Welcome to Note App</h3>
+        <h3 className="welcome-title">Welcome to Keep</h3>
         <form action="">
           {action === "Sign up" && (
             <div className="username">

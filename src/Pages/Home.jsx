@@ -27,14 +27,14 @@ function Home() {
   const [user] = useAuthState(auth);
 
 
-  useEffect(() => {
-    async function handleSingin() {
-      const auth = getAuth();
-      const userCredential = await signInWithEmailAndPassword(auth, 'user@gmail.com', 'user@123')
+  // useEffect(() => {
+  //   async function handleSingin() {
+  //     const auth = getAuth();
+  //     const userCredential = await signInWithEmailAndPassword(auth, 'user@gmail.com', 'user@123')
 
-    }
-    handleSingin()
-  })
+  //   }
+  //   handleSingin()
+  // })
 
   useEffect(() => {
     // fetch data from database
